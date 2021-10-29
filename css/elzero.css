@@ -1299,7 +1299,6 @@ ul {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 50px;
 }
 .discount .image {
   background-image: url(../imgs/discount-background1.jpg);
@@ -1333,6 +1332,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-basis: 50%;
+  padding-bottom: 50px;
 }
 @media (max-width: 991px) {
   .discount .form {
