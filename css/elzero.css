@@ -115,10 +115,12 @@ ul {
 .dots-up {
   top: 200px;
   right: 0;
+  z-index: -1;
 }
 .dots-down {
   bottom: 200px;
   left: 0;
+  z-index: -1;
 }
 /* End Global Rules */
 /* Start Header */
@@ -946,6 +948,7 @@ ul {
   text-align: center;
   width: 75px;
   transition: var(--main-transition);
+  background: #fff;
 }
 .events .info .time .unit span {
   display: block;
