@@ -15,3 +15,4 @@ You Can Add This Add-ons To The Design
 - JavaScript Countdown => https://youtu.be/eFsiOTJrrE8
 - Animate Width On Scrolling => https://youtu.be/sbIoIKI9FOc
 - Increase Numbers On Scrolling => https://youtu.be/PLsUdgLnzgQ
+- Add Scroll To Up => https://youtu.be/9u1sj176W4o
