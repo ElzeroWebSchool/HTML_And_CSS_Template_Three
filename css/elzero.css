@@ -1510,6 +1510,16 @@ ul {
   border-top: 1px solid #444;
 }
 /* End Footer */
+.arrow-up{
+  color: var(--main-color);
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  animation: up-down-arrow .5s  infinite alternate ;
+}
 /* Start Animation */
 @keyframes up-and-down {
   0%,
@@ -1583,6 +1593,14 @@ ul {
   }
   50% {
     background-image: url("../imgs/discount-background2.jpg");
+  }
+}
+@keyframes up-down-arrow {
+  from{
+    transform:  translateY(0);;
+  }
+  to{
+    transform: translateY(10px);
   }
 }
 /* End Animation */
