@@ -75,3 +75,17 @@ function startCount(el) {
     }
   }, 2000 / goal);
 }
+let arrowUp = document.querySelector(".arrow-up");
+arrowUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+window.onscroll = function(){
+  if (window.scrollY <= 664){
+    arrowUp.style.cssText ="display:none;";
+  }else{
+    arrowUp.style.cssText ="display:block;";
+  }
+}
