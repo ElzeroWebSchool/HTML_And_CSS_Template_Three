@@ -819,17 +819,12 @@ ul {
   color: var(--main-color);
 }
 .our-skills .skill .the-progress {
-  height: 30px;
   background-color: #eee;
-  position: relative;
 }
 .our-skills .skill .the-progress span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: var(--main-color);
-  transition: width 0.5s linear;
+    display: block;
+    background-color: var(--main-color);
+    height: 30px;
 }
 /* End Skills */
 /* Start Work Steps */
