@@ -1339,23 +1339,103 @@ ul {
     flex-basis: 100%;
   }
 }
-.discount .form .input {
+/* CSS for animation pn input fields */
+.form-group {
+	position: relative;
+}
+.form-input {
+  position: relative;
+	width: 100%;
+	height: 40px;
+  border-radius: 5px;
+	outline: none;
   display: block;
-  width: 100%;
   margin-bottom: 25px;
   padding: 15px;
-  border: none;
-  border-bottom: 1px solid #ccc;
   background-color: #f9f9f9;
   caret-color: var(--main-color);
+	transition: all .5s ease;
 }
-.discount .form textarea.input {
+.form-input.border-animation.set-1:hover{
+  border-color: rgba(0, 0, 0, .35);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.form-input.smooth-corner {
+	border-radius: 5px;
+}
+.form-input.border-animation {
+	border: 2px solid rgba(0, 0, 0, .2);
+}
+.form-input.border-animation ~ .border-line-animation.top-bottom:before,
+.form-input.border-animation ~ .border-line-animation.top-bottom:after,
+.form-input.border-animation ~ .border-line-animation.left-right:before,
+.form-input.border-animation ~ .border-line-animation.left-right:after,
+.form-input.border-animation ~ .border-line-animation.top:before,
+.form-input.border-animation ~ .border-line-animation.top:after,
+.form-input.border-animation ~ .border-line-animation.bottom:before,
+.form-input.border-animation ~ .border-line-animation.bottom:after,
+.form-input.border-animation ~ .border-line-animation.left:before,
+.form-input.border-animation ~ .border-line-animation.left:after,
+.form-input.border-animation ~ .border-line-animation.right:before,
+.form-input.border-animation ~ .border-line-animation.right:after{
+	position: absolute;
+	content: " ";
+	right: 0;
+	background: #4285F4;
+  transition: all .5s linear;
+}
+.form-input.border-animation ~ .border-line-animation.top-bottom:before,
+.form-input.border-animation ~ .border-line-animation.top-bottom:after,
+.form-input.border-animation ~ .border-line-animation.top:before,
+.form-input.border-animation ~ .border-line-animation.top:after,
+.form-input.border-animation ~ .border-line-animation.bottom:before,
+.form-input.border-animation ~ .border-line-animation.bottom:after
+{
+	width: 0;
+	height: 2px;
+}
+.form-input.border-animation ~ .border-line-animation.left-right:before,
+.form-input.border-animation ~ .border-line-animation.left-right:after,
+.form-input.border-animation ~ .border-line-animation.left:before,
+.form-input.border-animation ~ .border-line-animation.left:after,
+.form-input.border-animation ~ .border-line-animation.right:before,
+.form-input.border-animation ~ .border-line-animation.right:after
+{
+	width: 2px;
+	height: 0;
+}
+.form-input.border-animation.set-1 ~ .border-line-animation.top-bottom:before {
+	bottom: 0;
+	left: 0;
+}
+.form-input.border-animation.set-1 ~ .border-line-animation.top-bottom:after {
+	top: 0;
+	right: 0;
+}
+.form-input.border-animation.set-1 ~ .border-line-animation.left-right:before {
+	left: 0;
+	bottom: 0;
+	left: 0;
+}
+.form-input.border-animation.set-1 ~ .border-line-animation.left-right:after {
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.form-input.border-animation.set-1:focus ~ .border-line-animation.top-bottom:before,
+.form-input.border-animation.set-1:focus ~ .border-line-animation.top-bottom:after {
+	width: 100%;
+}
+.form-input.border-animation.set-1:focus ~ .border-line-animation.left-right:before,
+.form-input.border-animation.set-1:focus ~ .border-line-animation.left-right:after {
+	height: 100%;
+}
+.discount .form .content .form-group textarea.input {
   resize: none;
   height: 200px;
 }
-.discount .form .input:focus {
-  outline: none;
-}
+/* End of animation css */
+
 .discount .form [type="submit"] {
   display: block;
   width: 100%;
