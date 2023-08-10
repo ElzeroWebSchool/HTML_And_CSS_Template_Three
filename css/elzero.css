@@ -367,7 +367,8 @@ ul {
   background-color: white;
   border-radius: 6px;
   overflow: hidden;
-  transition: transform var(--main-transition), box-shadow var(--main-transition);
+  transition: transform var(--main-transition),
+    box-shadow var(--main-transition);
 }
 .articles .box:hover {
   transform: translateY(-10px);
@@ -421,7 +422,8 @@ ul {
 .gallery .box {
   padding: 15px;
   background-color: white;
-  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+    0px 2px 4px 0px rgb(0 0 0 / 12%);
 }
 .gallery .box .image {
   position: relative;
@@ -488,11 +490,21 @@ ul {
   border-color: transparent transparent white transparent;
   transition: var(--main-transition);
 }
+@media ((min-width: 537px) and  (max-width:684px)) {
+  .features .box .img-holder::after {
+    border-width: 0px 0px 170px 700px;
+  }
+}
 .features .box .img-holder img {
   max-width: 100%;
 }
 .features .box:hover .img-holder::after {
-  border-width: 170px 500px 170px 0;
+  border-width: 170px 500px 170px 0px;
+}
+@media ((min-width: 537px) and  (max-width:684px)) {
+  .features .box:hover .img-holder::after {
+    border-width: 170px 700px 170px 0px;
+  }
 }
 .features .box h2 {
   position: relative;
