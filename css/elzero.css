@@ -503,7 +503,7 @@ ul {
 }
 @media ((min-width: 537px) and  (max-width:684px)) {
   .features .box:hover .img-holder::after {
-    border-width: 170px 900px 170px 0px;
+    border-width: 170px 700px 170px 0px;
   }
 }
 .features .box h2 {
