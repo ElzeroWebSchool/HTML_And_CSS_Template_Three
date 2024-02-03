@@ -8,9 +8,8 @@
 
  [HTML_And_CSS_Template_Three_YouTube](https://youtube.com/playlist?list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc)
 
-## If You Know JavaScript
 
-## You Can Add This Add-ons To The Design
+## If You Know JavaScript, You Can Add This Add-ons To The Design
 
 - JavaScript Countdown => https://youtu.be/eFsiOTJrrE8
 - Animate Width On Scrolling => https://youtu.be/sbIoIKI9FOc
