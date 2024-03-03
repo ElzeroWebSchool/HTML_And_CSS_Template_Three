@@ -18,6 +18,45 @@ html {
 body {
   font-family: "Cairo", sans-serif;
 }
+.loader {
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-color: #0075ff;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: rotate-right 2s linear infinite;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-width: 4px;
+  border-color: #009688;
+  border-style: solid dotted;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate-left 1s linear infinite;
+}
+/* Hide loader when content is loaded */
+.content {
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease; /* Add transition for opacity */
+}
+
+.content.show {
+  opacity: 1; /* Set opacity to 1 when 'show' class is added */
+}
 .scroller {
   position: fixed;
   top: 0;
@@ -1520,6 +1559,22 @@ ul {
 }
 /* End Footer */
 /* Start Animation */
+@keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
 @keyframes up-and-down {
   0%,
   100% {

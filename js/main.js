@@ -16,6 +16,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Function to show content with fading effect
+function showContent() {
+  document.querySelector('.loader').style.display = 'none';
+  document.querySelector('.content').classList.add('show'); // Add 'show' class
+}
+
+// Simulate loading time (1 second in this example)
+setTimeout(showContent, 1000);
+
+
 /*
  ** Countdown Timer
  ** Video URL: https://www.youtube.com/watch?v=eFsiOTJrrE8
