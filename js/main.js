@@ -1,3 +1,21 @@
+// Create Page Scroll Progress
+
+let pageScroller = document.querySelector(".scroller");
+let scrollHeight = document.documentElement.scrollHeight;
+let clientHeight = document.documentElement.clientHeight;
+
+
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  
+  if (scrollTop > 72) { // avoid scroller in the header
+    pageScroller.style.width = `${(scrollTop / (scrollHeight - clientHeight)) * 100}%`;
+  }
+  else {
+    pageScroller.style.width = 0;
+  }
+});
+
 /*
  ** Countdown Timer
  ** Video URL: https://www.youtube.com/watch?v=eFsiOTJrrE8
