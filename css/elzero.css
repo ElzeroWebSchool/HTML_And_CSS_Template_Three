@@ -956,6 +956,9 @@ ul {
   padding: 15px;
   color: var(--main-color);
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .events .info .time .unit span:last-child {
   padding: 8px 10px;
